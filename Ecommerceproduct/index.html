@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Management App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1 style="color:#b5ffb1">Product Management App</h1>
+
+<div class="top-bar">
+<input type="text" id="search" placeholder="Search products...">
+<button onclick="openForm()">Add Product</button>
+</div>
+
+<div id="loader" class="loader">Loading...</div>
+
+<div id="products" class="product-grid"></div>
+
+</div>
+
+
+
+
+<div id="formContainer" class="form-container">
+
+<div class="form-box">
+
+<h2 id="formTitle">Add Product</h2>
+
+<input id="title" placeholder="Product Title">
+<input id="price" placeholder="Price">
+<input id="category" placeholder="Category">
+<input id="image" placeholder="Image URL">
+<textarea id="description" placeholder="Description"></textarea>
+
+<div class="form-buttons">
+<button onclick="saveProduct()">Save</button>
+<button onclick="closeForm()">Cancel</button>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

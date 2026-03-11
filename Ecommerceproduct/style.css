@@ -1,0 +1,156 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background-image:url("https://static.wixstatic.com/media/c837a6_34d7e003671f4525a5f3d423270c1108~mv2.jpg/v1/fill/w_1870,h_380,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/weavy-Gemini-3-(Nano-Banana-Pro)-2026-02-01-at-11_04_41.jpg");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+min-height:100vh;
+padding:40px;
+color:white;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+.top-bar{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.top-bar input{
+padding:10px;
+width:250px;
+border-radius:5px;
+border:none;
+}
+
+.top-bar button{
+padding:10px 20px;
+background:#ff9800;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+color:black;
+border-radius:10px;
+padding:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:contain;
+}
+
+.card h3{
+font-size:16px;
+margin:10px 0;
+}
+
+.card p{
+font-size:13px;
+}
+
+.card-buttons{
+margin-top:10px;
+display:flex;
+justify-content:space-between;
+}
+
+.card-buttons button{
+padding:6px 10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.edit{
+background:#2196f3;
+color:white;
+}
+
+.delete{
+background:red;
+color:white;
+}
+
+.loader{
+text-align:center;
+font-size:20px;
+display:none;
+}
+#title{
+background: #9b4242;
+    padding: 18px 10px;
+    border: 0;
+border-radius: 7px;
+color: white;
+}
+
+.form-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+.form-box{
+background:#dd7878;
+padding:20px;
+width:300px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.form-box input,
+.form-box textarea{
+padding:8px;
+}
+
+.form-buttons{
+display:flex;
+justify-content:space-between;
+}
+
+.form-buttons button{
+padding:8px;
+cursor:pointer;
+}
